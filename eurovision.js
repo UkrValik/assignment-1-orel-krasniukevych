@@ -11,4 +11,6 @@ const data = require('fs')
   );
 data.pop();
 
-// console.log(data);
+const fs = require('fs')
+// fs.writeFileSync('./eurovision1.txt', data.map(str => str.join(' ')).join('\n'), 'utf8');
+fs.writeFileSync('./eurovision1.csv', data.map(str => str.join()).join('\n'), 'utf8');
